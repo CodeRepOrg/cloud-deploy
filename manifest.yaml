@@ -1,0 +1,6 @@
+# For Cloud Foundry Deploy
+applications:
+  - name: ja-template
+    random-route: true
+    memory: 256M
+    command: npm start
