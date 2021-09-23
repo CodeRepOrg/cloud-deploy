@@ -9,13 +9,13 @@ RUN npm install && \
 
 FROM node:lts-slim
 
-WORKDIR /usr/app/app
+WORKDIR /usr/app
 COPY . .
 
 RUN npm install
 
 COPY --from=FRONT \
-    /usr/builder/build /usr/app/ja
+    /usr/builder/build/ /usr/app/ja/build
 
 EXPOSE 8080
 

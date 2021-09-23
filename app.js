@@ -15,6 +15,9 @@ app.use(express.json())
 
 //Allowing CORS to FRONTEND reqs in another domain
 app.use(cors())
+app.get('/h', (req, res) => {
+    res.send("djaqdjwiwq");
+});
 
 //Error handling
 app.use((error, req, res, next) => {
